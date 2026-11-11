@@ -20,7 +20,7 @@ export default async function handler(request) {
   }
 
   const API_KEY = process.env.GEMINI_API_KEY;
-  const targetUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
+  const targetUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent?key=${API_KEY}`;
 
   const modifiedRequest = new Request(targetUrl, {
     method: request.method,
